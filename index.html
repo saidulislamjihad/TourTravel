@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nakamura Tour & Travels</title>
+	<!-- BootStrap -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<!-- goole Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/fontawesome/css/all.min.css">
+	<!-- Swiper -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/swiper.min.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" type="text/css" href="./assets/plugins/owl-carousel/owl.carousel.min.css">
+	<!-- slick slider -->
+	<link rel="stylesheet" type="text/css" href="./assets/plugins/slick-slider/slick.min.css">
+	<!-- Select2 -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<!-- dotlottie -->
+	<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+<body>
+	<!-- Header -->
+	<header class="header-section">
+		<div class="top-header-outer p-10">
+			<div class="top-header-left">
+				<span class="top-header-left-text">
+					<i class="fa-solid fa-phone"></i>
+					0123644822
+				</span>
+			</div>
+			<div class="top-header-right">
+				<div class="language dropdown">
+					<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					   <img src="assets/images/en_US.png" alt="flag">
+					   <span class="country-name">
+					   		English
+					   </span>
+					</button>
+					  <ul class="dropdown-menu">
+					    <li>
+					    	<a class="dropdown-item" href="#">
+					    		<img src="assets/images/en_US.png" alt="flag">
+							    <span class="country-name">
+							   		English
+							    </span>
+					    	</a>
+					    	<a class="dropdown-item" href="#">
+					    		<img src="assets/images/jp.png" alt="flag">
+							    <span class="country-name">
+							   		Japanese
+							    </span>
+					    	</a>
+					    </li>
+					  </ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-wrapper">
+			<nav class="nav-items-wrapper p-10">
+				<a href="#" class="brand-logo-outer">
+					<img src="./assets/images/Nakamura-logo.webp" class="brand-logo-inner" alt="Logo">
+				</a>
+				<div class="nav-toggle-btn">
+		            <div class="btn-inner"></div>
+		        </div>
+		        <ul class="nav-list">
+		        	<li class="nav-list-item">
+		        		<a href="#" class="nav-list-item-link">
+		        			Home
+		        		</a>
+		        	</li>
+		        	<li class="nav-list-item">
+		        		<a href="#" class="nav-list-item-link">
+		        			Hotel
+		        		</a>
+		        	</li>
+		        	<li class="nav-list-item">
+		        		<a href="#" class="nav-list-item-link">
+		        			Flight
+		        		</a>
+		        	</li>
+		        	<li class="nav-list-item">
+		        		<a href="#" class="nav-list-item-link">
+		        			API
+		        		</a>
+		        	</li>
+		        </ul>
+		        <div class="header-btn-outer">
+		        	<a href="#" class="header-btn-inner">
+		        		<span class="header-btn-icon">
+		        			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256" id="Flat"><path d="M209.28711,55.59863,153.32227,124H176a12,12,0,0,1,0,24H140v16h36a12,12,0,0,1,0,24H140v28a12,12,0,0,1-24,0V188H80a12,12,0,0,1,0-24h36V148H80a12,12,0,0,1,0-24h22.67773L46.71289,55.59863A11.99957,11.99957,0,1,1,65.28711,40.40137L128,117.0498l62.71289-76.64843a11.99957,11.99957,0,1,1,18.57422,15.19726Z"></path></svg>
+		        		</span>
+		        		<span class="header-btn-text">
+		        			JPY
+		        		</span>
+		        	</a>
+		        	<a href="#" class="header-btn-inner">
+		        		<span class="header-btn-text login">
+		        			Sign In / Register
+		        		</span>
+		        	</a>
+		        </div>
+	        </nav>
+		</div>
+	</header>
+	<!-- Header -->
+
+	<section class="home-form-section p-10">
+		<form class="home-form" action="" method="">
+			<div class="home-form-item-outer">
+				<label>Name</label>
+				<input type="text" name="name" class="form-control" placeholder="Name">
+			</div>
+			<div class="home-form-item-outer">
+				<label>Phone</label>
+				<input type="text" name="phone" class="form-control" placeholder="Phone">
+			</div>
+			<div class="home-form-item-outer">
+				<label>Email</label>
+				<input type="email" name="email" class="form-control" placeholder="Email">
+			</div>
+			<div class="home-form-btn-outer">
+				<button type="submit" class="home-form-btn">
+					Send
+				</button>
+			</div>
+		</form>
+	</section>
+
+	<section class="home-section">
+		<div class="row m-0 align-items-center">
+			<div class="col-md-6">
+				<div class="home-content-outer">
+					<h1 class="home-content-title">
+						Discover Your Next Adventure With
+						<span class="separate-color">Nakamura</span>
+					</h1>
+					<div class="home-content">						
+						Book now and enjoy seamless travel experiences with our user-friendly platform. Adventure awaits—let’s take off together!
+					</div>
+					<div class="video-overlay">
+		    			<a class="video-popup video-play-button" data-id="https://www.youtube.com/watch?v=VcanTpgDNJ8">
+		    				<i class="fa-solid fa-play"></i>
+		    			</a>
+		    		</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="home-image-outer">
+					<img src="assets/images/home.png" class="home-image-inner" alt="Image">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="image-slider-section">
+		<div class="">
+			<div class="owl-screenshots swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="service-widget">
+							<div class="post-media entry">
+								<img src="assets/images/image-slider1.jpeg" alt="" class="img-fluid img-rounded">
+							</div>
+						</div><!-- end service -->
+					</div>
+					<div class="swiper-slide">
+						<div class="service-widget">
+							<div class="post-media entry">
+								<img src="assets/images/image-slider2.jpeg" alt="" class="img-fluid img-rounded">
+							</div>
+						</div><!-- end service -->
+					</div>
+					<div class="swiper-slide">
+						<div class="service-widget">
+							<div class="post-media entry">
+								<img src="assets/images/image-slider3.jpeg" alt="" class="img-fluid img-rounded">
+							</div>
+						</div><!-- end service -->
+					</div>
+					<div class="swiper-slide">
+						<div class="service-widget">
+							<div class="post-media entry">
+								<img src="assets/images/image-slider4.jpeg" alt="" class="img-fluid img-rounded">
+							</div>
+						</div><!-- end service -->
+					</div>
+					<div class="swiper-slide">
+						<div class="service-widget">
+							<div class="post-media entry">
+								<img src="assets/images/image-slider1.jpeg" alt="" class="img-fluid img-rounded">
+							</div>
+						</div><!-- end service -->
+					</div>
+					<div class="swiper-slide">
+						<div class="service-widget">
+							<div class="post-media entry">
+								<img src="assets/images/image-slider2.jpeg" alt="" class="img-fluid img-rounded">
+							</div>
+						</div><!-- end service -->
+					</div>
+					<div class="swiper-slide">
+						<div class="service-widget">
+							<div class="post-media entry">
+								<img src="assets/images/image-slider3.jpeg" alt="" class="img-fluid img-rounded">
+							</div>
+						</div><!-- end service -->
+					</div>
+					<div class="swiper-slide">
+						<div class="service-widget">
+							<div class="post-media entry">
+								<img src="assets/images/image-slider4.jpeg" alt="" class="img-fluid img-rounded">
+							</div>
+						</div><!-- end service -->
+					</div>
+				</div>
+				<div class="swiper-button-next">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</div>
+				<div class="swiper-button-prev">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+				</div>
+            </div>
+		</div>
+	</section>
+
+	<section class="why-choose-section p-10">
+		<div class="section-title-outer">
+			<h2 class="section-title">
+				Why <span class="separate-color">Choose</span> Us
+			</h2>
+		</div>
+		<div class="row m-0 align-items-center">
+			<div class="col-md-4">
+				<ul class="choose-list text-right">
+					<li class="choose-list-item">
+						Easy Refund System
+						<i class="fa-solid fa-shield-halved"></i>
+					</li>
+					<li class="choose-list-item">
+						Satisfaction Guarantee
+						<i class="fa-solid fa-certificate"></i>
+					</li>
+					<li class="choose-list-item">
+						Emergency Assistance
+						<i class="fa-solid fa-truck-medical"></i>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<div class="why-choose-image-outer">
+					<dotlottie-player src="https://lottie.host/1455c67a-e83b-4895-8e72-826826b779e0/482OT9mTPt.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<ul class="choose-list">
+					<li class="choose-list-item">
+						<i class="fa-solid fa-ticket"></i>
+						Convenience Booking System
+					</li>
+					<li class="choose-list-item">
+						<i class="fa-solid fa-users-rays"></i>
+						Experienced Travel Guide
+					</li>
+					<li class="choose-list-item">
+						<i class="fa-solid fa-handshake"></i>
+						Safety And Trust
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="service-section">
+		<div class="service-items-wrapper owl-carousel">
+			<div class="service-item-outer">
+				<img src="assets/images/discount.png" class="service-item-image" alt="Image">
+				<h3 class="service-item-name">
+					Multi language support
+				</h3>
+				<a href="#" class="service-item-link">
+					Learn more
+				</a>
+			</div>
+			<div class="service-item-outer">
+				<img src="assets/images/discount.png" class="service-item-image" alt="Image">
+				<h3 class="service-item-name">
+					Airport Wheelchair Support
+				</h3>
+				<a href="#" class="service-item-link">
+					Learn more
+				</a>
+			</div>
+			<div class="service-item-outer">
+				<img src="assets/images/discount.png" class="service-item-image" alt="Image">
+				<h3 class="service-item-name">
+					Special Deal from Airlines
+				</h3>
+				<a href="#" class="service-item-link">
+					Learn more
+				</a>
+			</div>
+			<div class="service-item-outer">
+				<img src="assets/images/discount.png" class="service-item-image" alt="Image">
+				<h3 class="service-item-name">
+					Easy Date Change Reissue Policy
+				</h3>
+				<a href="#" class="service-item-link">
+					Learn more
+				</a>
+			</div>
+			<div class="service-item-outer">
+				<img src="assets/images/discount.png" class="service-item-image" alt="Image">
+				<h3 class="service-item-name">
+					Now Everything in Email
+				</h3>
+				<a href="#" class="service-item-link">
+					Learn more
+				</a>
+			</div>
+			<div class="service-item-outer">
+				<img src="assets/images/discount.png" class="service-item-image" alt="Image">
+				<h3 class="service-item-name">
+					Flight Alert
+				</h3>
+				<a href="#" class="service-item-link">
+					Learn more
+				</a>
+			</div>
+			<div class="service-item-outer">
+				<img src="assets/images/discount.png" class="service-item-image" alt="Image">
+				<h3 class="service-item-name">
+					Custom Travel Insurance
+				</h3>
+				<a href="#" class="service-item-link">
+					Learn more
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="airlines-section">
+		<div class="section-title-outer">
+			<h2 class="section-title">
+				Top <span class="separate-color">Airlines</span> with us
+			</h2>
+		</div>
+		<div class="airlines-items-wrapper p-10 owl-carousel">
+			<div class="airlines-item-outer">
+				<img src="assets/images/airlines1.png" class="airlines-item-image" alt="Logo">
+			</div>
+
+			<div class="airlines-item-outer">
+				<img src="assets/images/airlines2.png" class="airlines-item-image" alt="Logo">
+			</div>
+
+			<div class="airlines-item-outer">
+				<img src="assets/images/airlines3.png" class="airlines-item-image" alt="Logo">
+			</div>
+
+			<div class="airlines-item-outer">
+				<img src="assets/images/airlines4.png" class="airlines-item-image" alt="Logo">
+			</div>
+
+			<div class="airlines-item-outer">
+				<img src="assets/images/airlines5.png" class="airlines-item-image" alt="Logo">
+			</div>
+
+			<div class="airlines-item-outer">
+				<img src="assets/images/airlines6.png" class="airlines-item-image" alt="Logo">
+			</div>
+
+			<div class="airlines-item-outer">
+				<img src="assets/images/airlines7.png" class="airlines-item-image" alt="Logo">
+			</div>
+		</div>
+	</section>
+
+	<section class="hotel-section">
+		<div class="section-title-outer">
+			<h2 class="section-title">
+				Featured <span class="separate-color">Hotels</span>
+			</h2>
+		</div>
+		<div class="row m-0">
+			<div class="col-md-3">
+				<div class="hotel-item-outer">
+					<img src="assets/images/hotel1.jpg" class="hotel-item-image">
+					<div class="hotel-item-content">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+						<div class="hotel-content">
+							Book now and enjoy seamless travel experiences with our user-friendly platform.
+						</div>
+						<a href="#" class="hotel-item-link">
+							Learn More <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="hotel-item-outer">
+					<img src="assets/images/hotel2.jpg" class="hotel-item-image">
+					<div class="hotel-item-content">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+						<div class="hotel-content">
+							Book now and enjoy seamless travel experiences with our user-friendly platform.
+						</div>
+						<a href="#" class="hotel-item-link">
+							Learn More <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="hotel-item-outer">
+					<img src="assets/images/hotel3.jpg" class="hotel-item-image">
+					<div class="hotel-item-content">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+						<div class="hotel-content">
+							Book now and enjoy seamless travel experiences with our user-friendly platform.
+						</div>
+						<a href="#" class="hotel-item-link">
+							Learn More <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="hotel-item-outer">
+					<img src="assets/images/hotel1.jpg" class="hotel-item-image">
+					<div class="hotel-item-content">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+						<div class="hotel-content">
+							Book now and enjoy seamless travel experiences with our user-friendly platform.
+						</div>
+						<a href="#" class="hotel-item-link">
+							Learn More <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="flights-section">
+		<div class="section-title-outer">
+			<h2 class="section-title">
+				Top <span class="separate-color">Flights</span>
+			</h2>
+		</div>
+		<div class="row align-items-center m-0">
+			<div class="col-md-5">
+				<div class="flights-location-outer">
+					<dotlottie-player src="https://lottie.host/34ba2555-a817-4e65-b956-f31d171adea9/ewRuUQhuqR.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="flights-items-wrapper">
+					<div class="row m-0">
+						<div class="col-md-4">
+							<div class="flights-item-outer">
+								<div class="flights-country-outer">
+									<span class="country-name">
+										Japan
+									</span>
+									<span class="icon">
+										<i class="fa-solid fa-arrow-right-arrow-left"></i>
+									</span>
+									<span class="country-name">
+										Bangladesh
+									</span>
+								</div>
+								<div class="flights-airlines-name">
+									<img src="assets/images/ke.png" class="flights-airlines-image">
+									<span>Korean Air</span>
+								</div>
+								<div class="flights-item-price-outer">
+									<div class="flights-item-price-left">
+										<span class="flights-item-price-top">
+											Starting
+										</span>
+										<h6 class="flights-item-price">
+											$306.00
+										</h6>
+									</div>
+									<div class="flights-item-price-right">
+										<a href="#" class="flights-item-link">
+											<i class="fa-solid fa-paper-plane"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="flights-item-outer">
+								<div class="flights-country-outer">
+									<span class="country-name">
+										Japan
+									</span>
+									<span class="icon">
+										<i class="fa-solid fa-arrow-right-arrow-left"></i>
+									</span>
+									<span class="country-name">
+										America
+									</span>
+								</div>
+								<div class="flights-airlines-name">
+									<img src="assets/images/aa-1.png" class="flights-airlines-image">
+									<span>American Airlines</span>
+								</div>
+								<div class="flights-item-price-outer">
+									<div class="flights-item-price-left">
+										<span class="flights-item-price-top">
+											Starting
+										</span>
+										<h6 class="flights-item-price">
+											$306.00
+										</h6>
+									</div>
+									<div class="flights-item-price-right">
+										<a href="#" class="flights-item-link">
+											<i class="fa-solid fa-paper-plane"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="flights-item-outer">
+								<div class="flights-country-outer">
+									<span class="country-name">
+										Japan
+									</span>
+									<span class="icon">
+										<i class="fa-solid fa-arrow-right-arrow-left"></i>
+									</span>
+									<span class="country-name">
+										Bangladesh
+									</span>
+								</div>
+								<div class="flights-airlines-name">
+									<img src="assets/images/ke.png" class="flights-airlines-image">
+									<span>Korean Air</span>
+								</div>
+								<div class="flights-item-price-outer">
+									<div class="flights-item-price-left">
+										<span class="flights-item-price-top">
+											Starting
+										</span>
+										<h6 class="flights-item-price">
+											$306.00
+										</h6>
+									</div>
+									<div class="flights-item-price-right">
+										<a href="#" class="flights-item-link">
+											<i class="fa-solid fa-paper-plane"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="flights-item-outer">
+								<div class="flights-country-outer">
+									<span class="country-name">
+										Japan
+									</span>
+									<span class="icon">
+										<i class="fa-solid fa-arrow-right-arrow-left"></i>
+									</span>
+									<span class="country-name">
+										Bangladesh
+									</span>
+								</div>
+								<div class="flights-airlines-name">
+									<img src="assets/images/ke.png" class="flights-airlines-image">
+									<span>Korean Air</span>
+								</div>
+								<div class="flights-item-price-outer">
+									<div class="flights-item-price-left">
+										<span class="flights-item-price-top">
+											Starting
+										</span>
+										<h6 class="flights-item-price">
+											$306.00
+										</h6>
+									</div>
+									<div class="flights-item-price-right">
+										<a href="#" class="flights-item-link">
+											<i class="fa-solid fa-paper-plane"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="flights-item-outer">
+								<div class="flights-country-outer">
+									<span class="country-name">
+										Japan
+									</span>
+									<span class="icon">
+										<i class="fa-solid fa-arrow-right-arrow-left"></i>
+									</span>
+									<span class="country-name">
+										America
+									</span>
+								</div>
+								<div class="flights-airlines-name">
+									<img src="assets/images/aa-1.png" class="flights-airlines-image">
+									<span>American Airlines</span>
+								</div>
+								<div class="flights-item-price-outer">
+									<div class="flights-item-price-left">
+										<span class="flights-item-price-top">
+											Starting
+										</span>
+										<h6 class="flights-item-price">
+											$306.00
+										</h6>
+									</div>
+									<div class="flights-item-price-right">
+										<a href="#" class="flights-item-link">
+											<i class="fa-solid fa-paper-plane"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="flights-item-outer">
+								<div class="flights-country-outer">
+									<span class="country-name">
+										Japan
+									</span>
+									<span class="icon">
+										<i class="fa-solid fa-arrow-right-arrow-left"></i>
+									</span>
+									<span class="country-name">
+										Bangladesh
+									</span>
+								</div>
+								<div class="flights-airlines-name">
+									<img src="assets/images/ke.png" class="flights-airlines-image">
+									<span>Korean Air</span>
+								</div>
+								<div class="flights-item-price-outer">
+									<div class="flights-item-price-left">
+										<span class="flights-item-price-top">
+											Starting
+										</span>
+										<h6 class="flights-item-price">
+											$306.00
+										</h6>
+									</div>
+									<div class="flights-item-price-right">
+										<a href="#" class="flights-item-link">
+											<i class="fa-solid fa-paper-plane"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="flights-see-more-btn-link">
+						More Flights
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="banner-section">
+		<div class="banner-image-outer">
+			<img src="assets/images/banner.jpg" class="banner-image" alt="Banner Image">
+		</div>
+	</section>
+
+	<section class="blog-section p-10">
+		<div class="row m-0">
+			<div class="col-md-4 mb-3">
+				<div class="blog-item-wrap">
+					<a href="#" class="blog-image-outer">
+						<img src="assets/images/hotel2.jpg" class="blog-image" alt="Image">
+					</a>
+					<div class="blog-item-content-outer">
+						<a href="#" class="blog-item-title">
+							Exploring Japan: Top Must-See Attractions
+						</a>
+						<p class="blog-item-content">
+							Nakamura Tour’s guide to exploring Japan highlights the top must-see attractions that capture the essence of this fascinating country.
+						</p>
+						<a href="#" class="blog-item-link">
+							Read More <i class="fa-solid fa-angles-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-3">
+				<div class="blog-item-wrap">
+					<a href="#" class="blog-image-outer">
+						<img src="assets/images/hotel1.jpg" class="blog-image" alt="Image">
+					</a>
+					<div class="blog-item-content-outer">
+						<a href="#" class="blog-item-title">
+							How to Get the Best Deals on Flights
+						</a>
+						<p class="blog-item-content">
+							Finding the best flight deals can significantly reduce your travel expenses, and with Nakamura Tour’s expert tips, you can become a savvy traveler.
+						</p>
+						<a href="#" class="blog-item-link">
+							Read More <i class="fa-solid fa-angles-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-3">
+				<div class="blog-item-wrap">
+					<a href="#" class="blog-image-outer">
+						<img src="assets/images/hotel3.jpg" class="blog-image" alt="Image">
+					</a>
+					<div class="blog-item-content-outer">
+						<a href="#" class="blog-item-title">
+							Top 10 Travel Destinations for 2024
+						</a>
+						<p class="blog-item-content">
+							Discover the most exciting travel destinations for 2024 with Nakamura Tour.
+						</p>
+						<a href="#" class="blog-item-link">
+							Read More <i class="fa-solid fa-angles-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="booking-section p-10">
+		<div class="row m-0 align-items-center">
+			<div class="col-md-7">
+				<div class="booking-content-outer">
+					<h2 class="booking-content-title">
+						Let's Make Travel Awesome Together. 
+					</h2>
+					<a href="#" class="booking-btn-link">
+						Book Now
+					</a>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="booking-image-outer">
+					<img src="assets/images/booking.png" class="booking-image" alt="Image">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-section">
+		<div class="row m-0">
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-item-wrap">
+					<a href="#" class="footer-logo-outer">
+						<img src="./assets/images/Nakamura-logo.webp" class="footer-logo-inner" alt="Logo">
+					</a>
+					<p class="footer-item-text">
+						170-0005 MINAMIOTSUKA 3-11-10 3F TOSHIMA, TOKYO JAPAN
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-item-wrap">
+					<h3 class="footer-item-title">
+						QUICK LINKS
+					</h3>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								About
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Contact
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Terms & Conditions
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Privacy Statement
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-item-wrap">
+					<h3 class="footer-item-title">
+						OTHER SERVICES
+					</h3>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Flight booking API
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Join as B2B agent
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Make your travel website and apps
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Privacy Statement
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-item-wrap">
+					<h3 class="footer-item-title">
+						PAYMENT METHOD
+					</h3>
+					<img src="assets/images/payment-method.png" class="payment-method-image" alt="Image">
+					<h3 class="footer-item-title">
+						OTHER PARTNERS
+					</h3>
+					<div class="partner-image-outer">
+						<img src="assets/images/google-image.png" class="partner-image" alt="Image">
+						<img src="assets/images/patner.png" class="partner-image" alt="Image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="footer-bottom-outer">
+		<div class="footer-bottom-left">
+			<p>
+				Copyright © 2024 nakamura-tour.com – All rights reserved.	
+			</p>
+		</div>
+		<div class="fb-social-icon-outer">
+			<a href="#" class="fb-social-icon">
+				<i class="fa-brands fa-facebook-f"></i>
+			</a>
+			<a href="#" class="fb-social-icon">
+				<i class="fa-brands fa-youtube"></i>
+			</a>
+			<a href="#" class="fb-social-icon">
+				<i class="fa-brands fa-instagram"></i>
+			</a>
+		</div>
+	</div>
+
+	<!-- jquery -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="./assets/js/swiper.min.js"></script>
+	<!-- Owl Carosel -->
+	<script src="./assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+	<!-- Slick Slider -->
+	<script src="./assets/plugins/slick-slider/slick.min.js"></script>
+	<!-- Select2 -->
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<!-- Main Js -->
+	<script src="./assets/js/main.js"></script>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			effect: 'coverflow',
+			centeredSlides: true,
+			loopFillGroupWithBlank: true,
+			slidesPerView: 3,
+            initialSlide: 3,
+            keyboardControl: true,
+            mousewheelControl: false,
+            lazyLoading: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+                1199: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                575: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                }
+            }
+		});
+	</script>
+</body>
+</html>
