@@ -1,3 +1,22 @@
+  $(document).ready(function() {
+    // Toggle the 'show' class on nav-list when nav-toggle-btn is clicked
+    $('.nav-toggle-btn').on('click', function(event) {
+        event.stopPropagation();
+        $('.nav-items-wrapper').toggleClass('show');
+    });
+
+    // Remove the 'show' class when clicking anywhere else on the body
+    $('body').on('click', function() {
+        $('.nav-items-wrapper').removeClass('show');
+    });
+
+    // Prevent the event from bubbling up to body when clicking nav-items-wrapper
+    $('.nav-items-wrapper').on('click', function(event) {
+        event.stopPropagation();
+        $(this).removeClass('show');
+    });
+});
+
 // fixed header
 // $(window).scroll(function () {
 //     var scrollTop = $(window).scrollTop();

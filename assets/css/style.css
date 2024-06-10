@@ -107,6 +107,24 @@
         margin-right: 5px;
     }
 
+    .header-btn-inner.top-header {
+        border: 1px solid var(--text-white);
+        color: var(--text-white);
+        display: none;
+        padding: 0 10px;
+    }
+
+    .header-btn-inner.top-header .header-btn-icon svg {
+        color: var(--text-white);
+        fill: var(--text-white);
+        width: 14px;
+    }
+
+    .header-btn-inner.top-header .header-btn-text {
+        color: var(--text-white);
+        font-size: 13px;
+    }
+
     .language.dropdown .dropdown-toggle {
         border: none;
         background: transparent;
@@ -155,7 +173,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
 }
 
 .brand-logo-outer {
@@ -166,6 +184,8 @@
 
 .brand-logo-inner {
     width: 200px;
+    height: 100%;
+    object-fit: contain;
 }
 
 .nav-list {
@@ -196,6 +216,7 @@
 .header-btn-icon svg {
     width: 15px;
     color: var(--text-black);
+    fill: var(--primary);
 }
 
 .header-btn-text {
@@ -223,6 +244,67 @@
 
 .header-btn-inner:hover .header-btn-icon svg {
     color: var(--text-white);
+}
+
+.nav-items-wrapper.show .nav-list {
+    right: 0;
+}
+
+/*small btn css*/
+.nav-toggle-btn .btn-inner {
+    width: 20px;
+    border-bottom: 2px solid var(--primary);
+    position: relative;
+    transition: all .4s ease;
+}
+
+.nav-toggle-btn {
+    height: 30px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    background: #d8c8e4;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}
+
+.nav-toggle-btn .btn-inner:before {
+    content: "";
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    background: var(--primary);
+    top: -7px;
+    transition: all .4s ease;
+}
+
+.nav-toggle-btn .btn-inner:after {
+    content: "";
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    background: var(--primary);
+    top: 7px;
+    transition: all .4s ease;
+}
+
+
+.nav-items-wrapper.show .btn-inner {
+    border: transparent;
+}
+
+.nav-items-wrapper.show .btn-inner:before {
+    transform: rotate(45deg);
+    top: 0px;
+}
+
+.nav-items-wrapper.show .btn-inner:after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 /* Header section css End */
 
