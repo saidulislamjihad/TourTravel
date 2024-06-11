@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nakamura Tour & Travels</title>
+	<!-- BootStrap -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<!-- goole Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="./assets/fonts/fontawesome/css/all.min.css">
+	<!-- Swiper -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/swiper.min.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" type="text/css" href="./assets/plugins/owl-carousel/owl.carousel.min.css">
+	<!-- slick slider -->
+	<link rel="stylesheet" type="text/css" href="./assets/plugins/slick-slider/slick.min.css">
+	<!-- Select2 -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<!-- dotlottie -->
+	<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+<body>
+	<!-- Modal -->
+	<div class="modal fade" id="currencyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+			    <div class="modal-body">
+			      	<div class="currency-items-wrap">
+			      		<a href="#" class="currency-item-outer">
+			      			<span class="currency-item-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="0 0 32 32"><path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm1.548-13.289h5.063v-2.288h-4.197L24.5 7.5h-3.647l-4.8 7.534L11.251 7.5H7.5l6.06 8.923H9.39v2.288h5.063v1.878H9.39v2.288h5.063V25.5h3.096v-2.623h5.063V20.59h-5.063z" fill-rule="evenodd"></path></svg>						
+							</span>
+							<span class="currency-item-text">
+								<b>JPY</b> - Japanese Yen
+							</span>
+			      		</a>
+			      		<a href="#" class="currency-item-outer">
+			      			<span class="currency-item-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="0 0 32 32"><path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm6.5-12.846c0-2.523-1.576-3.948-5.263-4.836v-4.44c1.14.234 2.231.725 3.298 1.496l1.359-2.196a9.49 9.49 0 00-4.56-1.776V6h-2.11v1.355c-3.032.234-5.093 1.963-5.093 4.486 0 2.64 1.649 3.925 5.19 4.813v4.58c-1.577-.234-2.886-.935-4.269-2.01L9.5 21.35a11.495 11.495 0 005.724 2.314V26h2.11v-2.313c3.08-.257 5.166-1.963 5.166-4.533zm-7.18-5.327c-1.867-.537-2.327-1.168-2.327-2.15 0-1.027.8-1.845 2.328-1.962zm4.318 5.49c0 1.122-.873 1.893-2.401 2.01v-4.229c1.892.538 2.401 1.168 2.401 2.22z" fill-rule="evenodd"></path></svg>						
+							</span>
+							<span class="currency-item-text">
+								<b>USD</b> - United States Dollar
+							</span>
+			      		</a>
+			      	</div>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<!-- Header -->
+	<header class="header-section">
+		<div class="top-header-outer p-10">
+			<div class="top-header-left">
+				<span class="top-header-left-text">
+					<i class="fa-solid fa-phone"></i>
+					0123644822
+				</span>
+			</div>
+			<div>
+				<button data-bs-toggle="modal" data-bs-target="#currencyModal" class="header-btn-inner top-header">
+	        		<span class="header-btn-icon">
+	        			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256" id="Flat"><path d="M209.28711,55.59863,153.32227,124H176a12,12,0,0,1,0,24H140v16h36a12,12,0,0,1,0,24H140v28a12,12,0,0,1-24,0V188H80a12,12,0,0,1,0-24h36V148H80a12,12,0,0,1,0-24h22.67773L46.71289,55.59863A11.99957,11.99957,0,1,1,65.28711,40.40137L128,117.0498l62.71289-76.64843a11.99957,11.99957,0,1,1,18.57422,15.19726Z"></path></svg>
+	        		</span>
+	        		<span class="header-btn-text">
+	        			JPY
+	        		</span>
+	        	</button>
+			</div>
+			<div class="top-header-right">
+				<div class="language dropdown">
+					<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					   <img src="assets/images/en_US.png" alt="flag">
+					   <span class="country-name">
+					   		English
+					   </span>
+					</button>
+					  <ul class="dropdown-menu">
+					    <li>
+					    	<a class="dropdown-item" href="#">
+					    		<img src="assets/images/en_US.png" alt="flag">
+							    <span class="country-name">
+							   		English
+							    </span>
+					    	</a>
+					    	<a class="dropdown-item" href="#">
+					    		<img src="assets/images/jp.png" alt="flag">
+							    <span class="country-name">
+							   		Japanese
+							    </span>
+					    	</a>
+					    </li>
+					  </ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-wrapper">
+			<nav class="nav-items-wrapper p-10">
+				<a href="#" class="brand-logo-outer">
+					<img src="./assets/images/Nakamura-logo.webp" class="brand-logo-inner" alt="Logo">
+				</a>
+				<div class="nav-toggle-btn">
+		            <div class="btn-inner"></div>
+		        </div>
+		        <ul class="nav-list">
+		        	<li class="nav-list-item">
+		        		<a href="index.html" class="nav-list-item-link">
+		        			Home
+		        		</a>
+		        	</li>
+		        	<li class="nav-list-item">
+		        		<a href="hotel.html" class="nav-list-item-link">
+		        			Hotel
+		        		</a>
+		        	</li>
+		        	<li class="nav-list-item">
+		        		<a href="flight.html" class="nav-list-item-link">
+		        			Flight
+		        		</a>
+		        	</li>
+		        	<li class="nav-list-item">
+		        		<a href="#" class="nav-list-item-link">
+		        			API
+		        		</a>
+		        	</li>
+		        </ul>
+		        <div class="header-btn-outer">
+		        	<button data-bs-toggle="modal" data-bs-target="#currencyModal" class="header-btn-inner">
+		        		<span class="header-btn-icon">
+		        			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256" id="Flat"><path d="M209.28711,55.59863,153.32227,124H176a12,12,0,0,1,0,24H140v16h36a12,12,0,0,1,0,24H140v28a12,12,0,0,1-24,0V188H80a12,12,0,0,1,0-24h36V148H80a12,12,0,0,1,0-24h22.67773L46.71289,55.59863A11.99957,11.99957,0,1,1,65.28711,40.40137L128,117.0498l62.71289-76.64843a11.99957,11.99957,0,1,1,18.57422,15.19726Z"></path></svg>
+		        		</span>
+		        		<span class="header-btn-text">
+		        			JPY
+		        		</span>
+		        	</button>
+		        	<a href="#" class="header-btn-inner">
+		        		<span class="header-btn-text login">
+		        			Sign In / Register
+		        		</span>
+		        	</a>
+		        </div>
+	        </nav>
+		</div>
+	</header>
+	<!-- Header -->
+
+	<footer class="footer-section">
+		<div class="row m-0">
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-item-wrap">
+					<a href="#" class="footer-logo-outer">
+						<img src="./assets/images/Nakamura-logo.webp" class="footer-logo-inner" alt="Logo">
+					</a>
+					<p class="footer-item-text">
+						170-0005 MINAMIOTSUKA 3-11-10 3F TOSHIMA, TOKYO JAPAN
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-item-wrap">
+					<h3 class="footer-item-title">
+						QUICK LINKS
+					</h3>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								About
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Contact
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Terms & Conditions
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Privacy Statement
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-item-wrap">
+					<h3 class="footer-item-title">
+						OTHER SERVICES
+					</h3>
+					<ul class="footer-list">
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Flight booking API
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Join as B2B agent
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Make your travel website and apps
+							</a>
+						</li>
+						<li class="footer-list-item">
+							<a href="#" class="footer-list-item-link">
+								Privacy Statement
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-item-wrap">
+					<h3 class="footer-item-title">
+						PAYMENT METHOD
+					</h3>
+					<img src="assets/images/payment-method.png" class="payment-method-image" alt="Image">
+					<h3 class="footer-item-title">
+						OTHER PARTNERS
+					</h3>
+					<div class="partner-image-outer">
+						<img src="assets/images/google-image.png" class="partner-image" alt="Image">
+						<img src="assets/images/patner.png" class="partner-image" alt="Image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="footer-bottom-outer">
+		<div class="footer-bottom-left">
+			<p>
+				Copyright © 2024 nakamura-tour.com – All rights reserved.	
+			</p>
+		</div>
+		<div class="fb-social-icon-outer">
+			<a href="#" class="fb-social-icon">
+				<i class="fa-brands fa-facebook-f"></i>
+			</a>
+			<a href="#" class="fb-social-icon">
+				<i class="fa-brands fa-youtube"></i>
+			</a>
+			<a href="#" class="fb-social-icon">
+				<i class="fa-brands fa-instagram"></i>
+			</a>
+		</div>
+	</div>
+
+	<!-- jquery -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="./assets/js/swiper.min.js"></script>
+	<!-- Owl Carosel -->
+	<script src="./assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+	<!-- Slick Slider -->
+	<script src="./assets/plugins/slick-slider/slick.min.js"></script>
+	<!-- Select2 -->
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<!-- Main Js -->
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>

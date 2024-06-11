@@ -18,14 +18,14 @@
 });
 
 // fixed header
-// $(window).scroll(function () {
-//     var scrollTop = $(window).scrollTop();
-//     if (scrollTop >= 200) {
-//         $("body").addClass("fixed-header");
-//     } else {
-//         $("body").removeClass("fixed-header");
-//     }
-// });
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop >= 200) {
+        $("body").addClass("fixed-header");
+    } else {
+        $("body").removeClass("fixed-header");
+    }
+});
 
 //Service Slider Js
 $('.service-items-wrapper').owlCarousel({
@@ -41,7 +41,7 @@ $('.service-items-wrapper').owlCarousel({
             items: 1
         },
         600: {
-            items: 4
+            items: 3
         },
         1000: {
             items: 4
@@ -68,6 +68,44 @@ $('.airlines-items-wrapper').owlCarousel({
         },
         1000: {
             items: 6
+        }
+    }
+});
+
+var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    effect: 'coverflow',
+    centeredSlides: true,
+    loopFillGroupWithBlank: true,
+    slidesPerView: 3,
+    initialSlide: 3,
+    keyboardControl: true,
+    mousewheelControl: false,
+    lazyLoading: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        1199: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        991: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        575: {
+            slidesPerView: 1,
+            spaceBetween: 3,
         }
     }
 });

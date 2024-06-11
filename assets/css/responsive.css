@@ -34,6 +34,22 @@
 	    background: var(--primary);
 	    color: var(--text-white);
 	}
+	.home-content-title {
+	    font-size: 45px;
+	}
+
+	.booking-content-title {
+	    font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.home-content-title {
+	    font-size: 40px;
+	}
+	.choose-list-item {
+	    font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 767px){
@@ -45,5 +61,90 @@
 	    width: 100%;
 	    margin-right: 0;
 	    margin-bottom: 20px;
+	}
+
+	.home-content-outer {
+	    text-align: center;
+	}
+
+	.home-content-title {
+	    font-size: 36px;
+	}
+
+	.home-content {
+	    max-width: 100%;
+	}
+
+	.home-image-outer {
+	    margin-top: 30px;
+	}
+
+	.section-title {
+	    font-size: 40px;
+	}
+
+	.choose-list {
+	    text-align: center;
+	}
+
+	.choose-list.text-right .choose-list-item {
+	    flex-direction: unset;
+	    text-align: center;
+	    display: block;
+	}
+
+	.choose-list-item {
+	    display: block;
+	    font-size: 14px;
+	}
+
+	.choose-list-item i {
+	    display: block;
+	    margin: 0;
+	    margin-bottom: 10px;
+	}
+
+	.service-item-name {
+	    font-size: 16px;
+	}
+
+	.booking-content-title {
+	    font-size: 25px;
+	}
+
+	.booking-content-outer {
+	    text-align: center;
+	    margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.home-content-title {
+	    font-size: 30px;
+	}
+
+	.section-title {
+	    font-size: 30px;
+	}
+
+	.hotel-item-name {
+	    font-size: 16px;
+	}
+
+	.booking-section {
+	    padding: 30px 10px;
+	}
+
+	.footer-item-title {
+	    margin-bottom: 10px;
+	}
+
+	.footer-bottom-outer {
+	    display: block;
+	    text-align: center;
+	}
+
+	.footer-bottom-left {
+	    margin-bottom: 15px;
 	}
 }

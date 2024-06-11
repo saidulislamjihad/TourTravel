@@ -28,6 +28,72 @@
 
 </head>
 <body>
+	<!-- Currency Modal -->
+	<div class="modal fade" id="currencyModal" tabindex="-1" aria-labelledby="currencyModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		    <div class="modal-content">
+			    <div class="modal-body">
+			      	<div class="currency-items-wrap">
+			      		<a href="#" class="currency-item-outer">
+			      			<span class="currency-item-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="0 0 32 32"><path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm1.548-13.289h5.063v-2.288h-4.197L24.5 7.5h-3.647l-4.8 7.534L11.251 7.5H7.5l6.06 8.923H9.39v2.288h5.063v1.878H9.39v2.288h5.063V25.5h3.096v-2.623h5.063V20.59h-5.063z" fill-rule="evenodd"></path></svg>						
+							</span>
+							<span class="currency-item-text">
+								<b>JPY</b> - Japanese Yen
+							</span>
+			      		</a>
+			      		<a href="#" class="currency-item-outer">
+			      			<span class="currency-item-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px" viewBox="0 0 32 32"><path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm6.5-12.846c0-2.523-1.576-3.948-5.263-4.836v-4.44c1.14.234 2.231.725 3.298 1.496l1.359-2.196a9.49 9.49 0 00-4.56-1.776V6h-2.11v1.355c-3.032.234-5.093 1.963-5.093 4.486 0 2.64 1.649 3.925 5.19 4.813v4.58c-1.577-.234-2.886-.935-4.269-2.01L9.5 21.35a11.495 11.495 0 005.724 2.314V26h2.11v-2.313c3.08-.257 5.166-1.963 5.166-4.533zm-7.18-5.327c-1.867-.537-2.327-1.168-2.327-2.15 0-1.027.8-1.845 2.328-1.962zm4.318 5.49c0 1.122-.873 1.893-2.401 2.01v-4.229c1.892.538 2.401 1.168 2.401 2.22z" fill-rule="evenodd"></path></svg>						
+							</span>
+							<span class="currency-item-text">
+								<b>USD</b> - United States Dollar
+							</span>
+			      		</a>
+			      	</div>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<!-- Currency Modal -->
+
+	<!-- Login Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog  modal-dialog-centered custom-modal-width">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			    </div>
+			    <div class="modal-body">
+			    	<form action="" method="" class="login-form-wrap">
+			    		<div class="login-form-top-outer">
+			    			<h3 class="login-form-top-title">
+			    				Login Form
+			    			</h3>
+			    			<p class="login-form-top-text">
+			    				Please login to continue
+			    			</p>
+			    		</div>
+			    		<div class="login-form-outer">
+			    			<input type="email" name="email" class="form-control" placeholder="Email" required>
+			    			<input type="password" name="password" class="form-control" placeholder="Password" required>
+			    			<a href="#" class="forgot-password-link">
+			    				Forgot password?
+			    			</a>
+			    			<button type="submit" class="login-form-btn">
+			    				Log In
+			    			</button>
+			    		</div>
+			    		<p class="login-form-register-link">
+			    			Don’t have an account? <a href="#" class="register-link">Register here</a>
+			    		</p>
+			    	</form>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<!-- Login Modal -->
+	
 	<!-- Header -->
 	<header class="header-section">
 		<div class="top-header-outer p-10">
@@ -38,14 +104,14 @@
 				</span>
 			</div>
 			<div>
-				<a href="#" class="header-btn-inner top-header">
+				<button data-bs-toggle="modal" data-bs-target="#currencyModal" class="header-btn-inner top-header">
 	        		<span class="header-btn-icon">
 	        			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256" id="Flat"><path d="M209.28711,55.59863,153.32227,124H176a12,12,0,0,1,0,24H140v16h36a12,12,0,0,1,0,24H140v28a12,12,0,0,1-24,0V188H80a12,12,0,0,1,0-24h36V148H80a12,12,0,0,1,0-24h22.67773L46.71289,55.59863A11.99957,11.99957,0,1,1,65.28711,40.40137L128,117.0498l62.71289-76.64843a11.99957,11.99957,0,1,1,18.57422,15.19726Z"></path></svg>
 	        		</span>
 	        		<span class="header-btn-text">
 	        			JPY
 	        		</span>
-	        	</a>
+	        	</button>
 			</div>
 			<div class="top-header-right">
 				<div class="language dropdown">
@@ -84,17 +150,17 @@
 		        </div>
 		        <ul class="nav-list">
 		        	<li class="nav-list-item">
-		        		<a href="#" class="nav-list-item-link">
+		        		<a href="index.html" class="nav-list-item-link">
 		        			Home
 		        		</a>
 		        	</li>
 		        	<li class="nav-list-item">
-		        		<a href="#" class="nav-list-item-link">
+		        		<a href="hotel.html" class="nav-list-item-link">
 		        			Hotel
 		        		</a>
 		        	</li>
 		        	<li class="nav-list-item">
-		        		<a href="#" class="nav-list-item-link">
+		        		<a href="flight.html" class="nav-list-item-link">
 		        			Flight
 		        		</a>
 		        	</li>
@@ -105,15 +171,15 @@
 		        	</li>
 		        </ul>
 		        <div class="header-btn-outer">
-		        	<a href="#" class="header-btn-inner">
+		        	<button data-bs-toggle="modal" data-bs-target="#currencyModal" class="header-btn-inner">
 		        		<span class="header-btn-icon">
 		        			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 256 256" id="Flat"><path d="M209.28711,55.59863,153.32227,124H176a12,12,0,0,1,0,24H140v16h36a12,12,0,0,1,0,24H140v28a12,12,0,0,1-24,0V188H80a12,12,0,0,1,0-24h36V148H80a12,12,0,0,1,0-24h22.67773L46.71289,55.59863A11.99957,11.99957,0,1,1,65.28711,40.40137L128,117.0498l62.71289-76.64843a11.99957,11.99957,0,1,1,18.57422,15.19726Z"></path></svg>
 		        		</span>
 		        		<span class="header-btn-text">
 		        			JPY
 		        		</span>
-		        	</a>
-		        	<a href="#" class="header-btn-inner">
+		        	</button>
+		        	<a data-bs-toggle="modal" data-bs-target="#loginModal" class="header-btn-inner">
 		        		<span class="header-btn-text login">
 		        			Sign In / Register
 		        		</span>
@@ -148,7 +214,7 @@
 
 	<section class="home-section">
 		<div class="row m-0 align-items-center">
-			<div class="col-md-6">
+			<div class="col-lg-6 col-md-7">
 				<div class="home-content-outer">
 					<h1 class="home-content-title">
 						Discover Your Next Adventure With
@@ -164,7 +230,7 @@
 		    		</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-lg-6 col-md-4">
 				<div class="home-image-outer">
 					<img src="assets/images/home.png" class="home-image-inner" alt="Image">
 				</div>
@@ -253,16 +319,16 @@
 			<div class="col-md-4">
 				<ul class="choose-list text-right">
 					<li class="choose-list-item">
-						Easy Refund System
 						<i class="fa-solid fa-shield-halved"></i>
+						Easy Refund System
 					</li>
 					<li class="choose-list-item">
-						Satisfaction Guarantee
 						<i class="fa-solid fa-certificate"></i>
+						Satisfaction Guarantee
 					</li>
 					<li class="choose-list-item">
-						Emergency Assistance
 						<i class="fa-solid fa-truck-medical"></i>
+						Emergency Assistance
 					</li>
 				</ul>
 			</div>
@@ -402,9 +468,14 @@
 			</h2>
 		</div>
 		<div class="row m-0">
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6">
 				<div class="hotel-item-outer">
 					<img src="assets/images/hotel1.jpg" class="hotel-item-image">
+					<div class="hotel-item-info">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+					</div>
 					<div class="hotel-item-content">
 						<h4 class="hotel-item-name">
 							Hotel Name
@@ -418,9 +489,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6">
 				<div class="hotel-item-outer">
 					<img src="assets/images/hotel2.jpg" class="hotel-item-image">
+					<div class="hotel-item-info">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+					</div>
 					<div class="hotel-item-content">
 						<h4 class="hotel-item-name">
 							Hotel Name
@@ -434,9 +510,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6">
 				<div class="hotel-item-outer">
 					<img src="assets/images/hotel3.jpg" class="hotel-item-image">
+					<div class="hotel-item-info">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+					</div>
 					<div class="hotel-item-content">
 						<h4 class="hotel-item-name">
 							Hotel Name
@@ -450,9 +531,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6">
 				<div class="hotel-item-outer">
 					<img src="assets/images/hotel1.jpg" class="hotel-item-image">
+					<div class="hotel-item-info">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+					</div>
 					<div class="hotel-item-content">
 						<h4 class="hotel-item-name">
 							Hotel Name
@@ -470,11 +556,6 @@
 	</section>
 
 	<section class="flights-section">
-		<div class="section-title-outer">
-			<h2 class="section-title">
-				Top <span class="separate-color">Flights</span>
-			</h2>
-		</div>
 		<div class="row align-items-center m-0">
 			<div class="col-md-5">
 				<div class="flights-location-outer">
@@ -483,8 +564,13 @@
 			</div>
 			<div class="col-md-7">
 				<div class="flights-items-wrapper">
+					<div class="section-title-outer">
+						<h2 class="section-title">
+							Top <span class="separate-color">Flights</span>
+						</h2>
+					</div>
 					<div class="row m-0">
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="flights-item-outer">
 								<div class="flights-country-outer">
 									<span class="country-name">
@@ -518,7 +604,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="flights-item-outer">
 								<div class="flights-country-outer">
 									<span class="country-name">
@@ -552,7 +638,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="flights-item-outer">
 								<div class="flights-country-outer">
 									<span class="country-name">
@@ -586,7 +672,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="flights-item-outer">
 								<div class="flights-country-outer">
 									<span class="country-name">
@@ -620,7 +706,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="flights-item-outer">
 								<div class="flights-country-outer">
 									<span class="country-name">
@@ -654,7 +740,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="flights-item-outer">
 								<div class="flights-country-outer">
 									<span class="country-name">
@@ -705,7 +791,7 @@
 
 	<section class="blog-section p-10">
 		<div class="row m-0">
-			<div class="col-md-4 mb-3">
+			<div class="col-lg-4 col-md-6 mb-3">
 				<div class="blog-item-wrap">
 					<a href="#" class="blog-image-outer">
 						<img src="assets/images/hotel2.jpg" class="blog-image" alt="Image">
@@ -723,7 +809,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 mb-3">
+			<div class="col-lg-4 col-md-6 mb-3">
 				<div class="blog-item-wrap">
 					<a href="#" class="blog-image-outer">
 						<img src="assets/images/hotel1.jpg" class="blog-image" alt="Image">
@@ -741,7 +827,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 mb-3">
+			<div class="col-lg-4 col-md-6 mb-3">
 				<div class="blog-item-wrap">
 					<a href="#" class="blog-image-outer">
 						<img src="assets/images/hotel3.jpg" class="blog-image" alt="Image">
@@ -903,44 +989,5 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	<!-- Main Js -->
 	<script src="./assets/js/main.js"></script>
-	<script type="text/javascript">
-		var swiper = new Swiper('.swiper-container', {
-			loop: true,
-			effect: 'coverflow',
-			centeredSlides: true,
-			loopFillGroupWithBlank: true,
-			slidesPerView: 3,
-            initialSlide: 3,
-            keyboardControl: true,
-            mousewheelControl: false,
-            lazyLoading: true,
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			breakpoints: {
-                1199: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-                991: {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                },
-                767: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                575: {
-                    slidesPerView: 1,
-                    spaceBetween: 3,
-                }
-            }
-		});
-	</script>
 </body>
 </html>
