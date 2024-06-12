@@ -28,8 +28,8 @@
 
 </head>
 <body>
-	<!-- Modal -->
-	<div class="modal fade" id="currencyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<!-- Currency Modal -->
+	<div class="modal fade" id="currencyModal" tabindex="-1" aria-labelledby="currencyModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 		    <div class="modal-content">
 			    <div class="modal-body">
@@ -55,7 +55,45 @@
 		    </div>
 		</div>
 	</div>
-	<!-- Modal -->
+	<!-- Currency Modal -->
+
+	<!-- Login Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog  modal-dialog-centered custom-modal-width">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			    </div>
+			    <div class="modal-body">
+			    	<form action="" method="" class="login-form-wrap">
+			    		<div class="login-form-top-outer">
+			    			<h3 class="login-form-top-title">
+			    				Login Form
+			    			</h3>
+			    			<p class="login-form-top-text">
+			    				Please login to continue
+			    			</p>
+			    		</div>
+			    		<div class="login-form-outer">
+			    			<input type="email" name="email" class="form-control" placeholder="Email" required>
+			    			<input type="password" name="password" class="form-control" placeholder="Password" required>
+			    			<a href="#" class="forgot-password-link">
+			    				Forgot password?
+			    			</a>
+			    			<button type="submit" class="login-form-btn">
+			    				Log In
+			    			</button>
+			    		</div>
+			    		<p class="login-form-register-link">
+			    			Don’t have an account? <a href="#" class="register-link">Register here</a>
+			    		</p>
+			    	</form>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<!-- Login Modal -->
+	
 	<!-- Header -->
 	<header class="header-section">
 		<div class="top-header-outer p-10">
@@ -141,7 +179,7 @@
 		        			JPY
 		        		</span>
 		        	</button>
-		        	<a href="#" class="header-btn-inner">
+		        	<a data-bs-toggle="modal" data-bs-target="#loginModal" class="header-btn-inner">
 		        		<span class="header-btn-text login">
 		        			Sign In / Register
 		        		</span>
@@ -151,6 +189,100 @@
 		</div>
 	</header>
 	<!-- Header -->
+
+	<section class="hotel-section">
+		<div class="section-title-outer">
+			<h2 class="section-title">
+				Featured <span class="separate-color">Hotels</span>
+			</h2>
+		</div>
+		<div class="row m-0">
+			<div class="col-lg-3 col-md-6">
+				<div class="hotel-item-outer">
+					<img src="assets/images/hotel1.jpg" class="hotel-item-image">
+					<div class="hotel-item-info">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+					</div>
+					<div class="hotel-item-content">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+						<div class="hotel-content">
+							Book now and enjoy seamless travel experiences with our user-friendly platform.
+						</div>
+						<a href="#" class="hotel-item-link">
+							Learn More <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="hotel-item-outer">
+					<img src="assets/images/hotel2.jpg" class="hotel-item-image">
+					<div class="hotel-item-info">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+					</div>
+					<div class="hotel-item-content">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+						<div class="hotel-content">
+							Book now and enjoy seamless travel experiences with our user-friendly platform.
+						</div>
+						<a href="#" class="hotel-item-link">
+							Learn More <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="hotel-item-outer">
+					<img src="assets/images/hotel3.jpg" class="hotel-item-image">
+					<div class="hotel-item-info">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+					</div>
+					<div class="hotel-item-content">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+						<div class="hotel-content">
+							Book now and enjoy seamless travel experiences with our user-friendly platform.
+						</div>
+						<a href="#" class="hotel-item-link">
+							Learn More <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="hotel-item-outer">
+					<img src="assets/images/hotel1.jpg" class="hotel-item-image">
+					<div class="hotel-item-info">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+					</div>
+					<div class="hotel-item-content">
+						<h4 class="hotel-item-name">
+							Hotel Name
+						</h4>
+						<div class="hotel-content">
+							Book now and enjoy seamless travel experiences with our user-friendly platform.
+						</div>
+						<a href="#" class="hotel-item-link">
+							Learn More <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<footer class="footer-section">
 		<div class="row m-0">
