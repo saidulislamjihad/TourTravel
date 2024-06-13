@@ -1223,3 +1223,254 @@
     color: var(--text-white);
 }
 /* Footer bottom css End */
+
+/* Blog details css start */
+.blog-details__image-outer {
+    margin-bottom: 30px;
+}
+
+.blog-details__image {
+    height: 350px;
+    object-fit: cover;
+}
+
+.blog-details__info-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-black);
+    margin-bottom: 15px;
+}
+
+.blog-details__info-outer {
+    padding: 0 20px 30px;
+}
+
+.blog-details__info p, .blog-details__info * {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--text-black);
+}
+
+.comment-form-section {
+    padding: 40px;
+    background: #ededed;
+}
+
+.comment-form-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-black);
+}
+
+.comment-form-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-black);
+}
+
+.comment-form-item-outer {
+    margin-bottom: 20px;
+}
+
+.comment-form-item-outer label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: var(--text-black);
+}
+
+.comment-form-item-outer textarea {
+    border: 1px solid var(--text-black);
+    border-radius: 3px;
+}
+
+.comment-form-item-outer textarea:focus,.comment-form-item-outer input:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary);
+}
+
+.comment-form-item-outer input {
+    height: 40px;
+    border: 1px solid var(--text-black);
+    border-radius: 3px;
+}
+
+.comment-form-item-outer.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.comment-form-item-outer.checkbox input {
+    width: 20px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.comment-form-item-outer.checkbox label {
+    margin-bottom: 0;
+}
+
+.comment-form-btn {
+    border: 1px solid var(--primary);
+    padding: 7px 20px;
+    display: inline-block;
+    font-size: 16px;
+    color: var(--text-white);
+    background: var(--primary);
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/* Blog details css End */
+
+/* api section css start */
+.api-section {
+    padding: 20px 10px;
+}
+
+.api-content-outer {
+    background-color: #10204B;
+    background-image: url(https://dev-nakamurademo.pantheonsite.io/wp-content/uploads/2024/06/25252435_7076397-scaled.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    border-radius: 20px 20px 20px 20px;
+    padding: 40px;
+}
+
+.api-sec-title {
+    text-align: left;
+    font-family: "Alata", Sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    color: var(--text-white);
+    margin-bottom: 20px;
+}
+
+.api-sec-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-white);
+}
+/* api section css End */
+
+/* Fare section css start */
+.fare-section {
+    padding: 40px 0;
+}
+
+.fare-item-outer {
+    height: 100%;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #A0A0A06B;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.22);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 10px 10px 10px 10px;
+    --e-column-margin-right: 10px;
+    --e-column-margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fare-item-title {
+    color: var(--text-black);
+    font-family:
+    "Alata", Sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 12px;
+}
+
+.fare-item-text {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3B3B3B;
+}
+
+.fare-item-outer:hover {
+    background-color: #F1E7FA;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--primary);
+}
+/* Fare section css End */
+
+/* Proccss section css start */
+.process-section {
+    padding: 40px 0;
+}
+
+.process-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+.process__item-outer {
+    padding: 25px;
+    text-align: center;
+}
+
+.process__item-number-outer {position: relative;margin-bottom: 1rem;width: 100px;height: 100px;border-radius: 50%;background-color: #e9ecf0;color: var(--primary);display: flex;align-items: center;justify-content: center;}
+
+.process__item-steps-label {
+    position: absolute;
+    top: 0px;
+    right: -6px;
+    overflow: hidden;
+    padding: 7px;
+    max-width: 200%;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    background-color: #8056ee;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 11px;
+    line-height: 1;
+}
+
+.fa-solid.fa-chevron-right,.fa-solid.fa-chevron-right:after {
+    position: absolute;
+    display: inline-block;
+    border-top: 1px solid #ddd;
+}
+
+.fa-solid.fa-chevron-right {
+    top: 50%;
+    left: calc(100% + 40px);
+    width: 100px;
+    border-top-style: dashed;
+    border-color: var(--primary);
+}
+
+.fa-solid.fa-chevron-right:before {position: absolute;right: 0;top: -8px;}
+
+.process__item-number {
+    margin-bottom: 0;
+}
+
+.process__item-number i {
+    font-size: 35px;
+    color: var(--primary);
+}
+
+.process__item-name {
+    margin-bottom: 0;
+    font-family: "Alata", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--text-black);
+}
+/* Proccss section css End */
