@@ -648,9 +648,9 @@
 }
 
 .choose-list-item {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: var(--text-black);
     font-family: var(--secondary-font-family);
     display: flex;
@@ -1474,3 +1474,253 @@
     color: var(--text-black);
 }
 /* Proccss section css End */
+
+/* Inner banner section css start*/
+.banner-sec-outer {
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-sec-outer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #0000007a;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.banner-title {
+    color: var(--text-white);
+    font-family: "Alata", Sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+/* Inner banner section css End*/
+
+/* About section css start */
+.about-section {
+    padding: 50px 10px;
+}
+
+.about-content-outer {
+    margin-bottom: 20px;
+}
+
+.about-title-outer {
+    margin-bottom: 30px;
+}
+
+.about-title-outer .about-title {
+    font-family: "Alata", Sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2em;
+}
+
+.about-title-outer .about-subtitle {
+    font-family: "Alata", Sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.responsive-image-outer {
+    display: none;
+}
+
+.about-content p, .about-content {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--text-black);
+}
+
+.about-contact-btn-link {
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid var(--primary);
+    padding: 6px 20px;
+    font-size: 16px;
+    color: var(--text-white);
+    background: var(--primary);
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+/* About section css End */
+
+/* Offer content section css start */
+.offer-content-section {
+    padding: 50px 10px;
+}
+
+.offer-content-image-outer {
+    float: left;
+    margin-bottom: 20px;
+    padding-right: 60px
+}
+
+.offer-content-outer .section-title {
+    text-align: left;
+}
+
+.offer-content p, .offer-content {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--text-black);
+}
+/* Offer content section css End */
+
+/* Contact section css start */
+.contact-form-wrapper {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 50px 50px;
+    -webkit-box-shadow: 0px 0px 50px rgba(89, 86, 230, 0.05);
+    box-shadow: 0px 0px 50px rgba(89, 86, 230, 0.05);
+}
+
+.contact-address-list{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.contact-address-outer {
+    background-color: #e3dbef;
+    padding: 50px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.contact-address-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+}
+
+.single-address-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    word-break: break-all;
+}
+
+.single-address-item .icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.single-address-item .text {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.single-address-item .icon-wrap i {
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.contact-form-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--text-black);
+}
+
+.contact-item-outer {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contact-item-outer input {
+    height: 45px;
+    border: 1px solid #E1E1E1;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    padding: 8px 5px 8px 40px;
+    color: #6A6A6A;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+.contact-item-outer i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #CDCDCD;
+    z-index: 5;
+}
+
+.contact-item-outer textarea {
+    border: 1px solid #E1E1E1;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    padding: 15px;
+    color: #6A6A6A;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+.contact-item-outer input:focus,.contact-item-outer textarea:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary);
+}
+
+.contact-form-btn-outer {
+    text-align: end;
+}
+
+.contact-form-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: var(--primary);
+    padding: 8px 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    letter-spacing: 1px;
+}
+
+.contact-form-btn:hover {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary-color);
+}
+/* Contact section css End */

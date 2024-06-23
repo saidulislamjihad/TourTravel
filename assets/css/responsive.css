@@ -41,6 +41,22 @@
 	.booking-content-title {
 	    font-size: 40px;
 	}
+
+	.offer-content-image-outer {
+	    float: none;
+	    padding-right: 0;
+	    text-align: center;
+	}
+
+	.offer-content-outer {
+	    text-align: center;
+	}
+
+	.offer-content-outer .section-title {
+	    text-align: center;
+	    font-size: 35px;
+	    font-weight: 500;
+	}
 }
 
 @media screen and (max-width: 991px){
@@ -49,6 +65,33 @@
 	}
 	.choose-list-item {
 	    font-size: 16px;
+	}
+
+	.about-image-outer {
+	    display: none;
+	}
+
+	.responsive-image-outer {
+	    display: block;
+	    margin-bottom: 20px;
+	}
+
+	.about-title-outer {
+	    text-align: center;
+	}
+
+	.about-title-outer .about-title {
+	    font-size: 35px;
+	}
+
+	.about-title-outer .about-subtitle {
+	    font-size: 25px;
+	}
+
+	.contact-address-outer {
+	    padding: 20px;
+	    margin-bottom: 30px;
+	    height: auto;
 	}
 }
 
@@ -146,5 +189,13 @@
 
 	.footer-bottom-left {
 	    margin-bottom: 15px;
+	}
+
+	.banner-sec-outer {
+	    height: 200px;
+	}
+
+	.banner-title {
+	    font-size: 50px;
 	}
 }
